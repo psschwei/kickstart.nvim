@@ -612,6 +612,11 @@ require('lazy').setup({
         end,
       })
 
+      -- Pre-Existing LSP Servers
+      require('lspconfig').clangd.setup {}
+      require('lspconfig').gopls.setup {}
+      require('lspconfig').pylsp.setup {}
+
       -- Diagnostic Config
       -- See :help vim.diagnostic.Opts
       vim.diagnostic.config {
