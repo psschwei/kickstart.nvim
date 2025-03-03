@@ -147,6 +147,9 @@ vim.opt.splitbelow = true
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+-- Use 4 spaces as tab
+vim.cmd 'set shiftwidth=4 smarttab'
+
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
